@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calobirra · ¿Cuántos tercios son tus pasos?</title>
+<meta name="description" content="App para iPhone que traduce tus pasos a calorías aproximadas de caña, tercio, copa o lata. Con humor de bar y sin cuentas.">
+<meta property="og:title" content="Calobirra · ¿Cuántos tercios son tus pasos?">
+<meta property="og:description" content="App para iPhone que traduce tus pasos a calorías aproximadas de caña, tercio, copa o lata. Con humor de bar y sin cuentas.">
+<meta property="og:image" content="assets/icono-1024.png">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/calobirra.css">
+</head>
+<body>
+<header class="wrap top">
+<a class="mark" href="index.html"><img src="assets/icono-1024.png" alt="" width="40" height="40">Calobirra</a>
+<nav class="nav" aria-label="Principal"><a href="index.html" aria-current=page>Inicio</a><a href="soporte.html">Soporte</a><a href="privacidad.html">Privacidad</a><a href="condiciones.html">Condiciones</a></nav>
+</header>
+<main>
+<div class="wrap hero">
+<div>
+<img class="mascot" src="assets/mascota-andando.png" alt="" width="160" height="160">
+<h1>¿Cuántos tercios son tus pasos?</h1>
+<p class="lead">Calobirra cuenta lo que has andado hoy y lo traduce, a ojo, a calorías de caña, tercio, copa o lata. Una curiosidad con humor de bar para iPhone.</p>
+<span class="soon">Próximamente en el App Store <small>· iPhone · gratis con Plus opcional</small></span>
+</div>
+<div class="block converter" aria-labelledby="conv-title">
+<label id="conv-title" for="pasos">Mueve los pasos y mira el tercio</label>
+<div class="steps"><b id="pasos-num">8.703</b><span>pasos</span></div>
+<input id="pasos" type="range" min="0" max="20000" step="1" value="8703">
+<div class="stage" aria-hidden="true"><div class="minis" id="minis"></div><div class="mainv" id="principal"></div></div>
+<p class="total" id="total" aria-live="polite">≈ 2,3 tercios</p>
+<p class="breakdown" id="desglose">2 llenos + 1 al 30 %</p>
+<p class="kcal" id="kcal">≈ 326 kcal estimadas con 75 kg</p>
+<p class="note">Es una comparación de calorías, no una invitación. Caminar no compensa el alcohol ni dice cuánto puedes beber.</p>
+</div>
+</div>
+
+<section class="wrap" aria-labelledby="h-vasos">
+<h2 id="h-vasos">Cada bebida, con su forma</h2>
+<p class="kicker">Tus pasos son los mismos; cambia el recipiente con un toque. Si salen 2,3, ves dos llenos y el tercero al 30 %, con el total siempre a la vista.</p>
+<div class="vessels">
+<div class="block vessel"><img src="assets/vaso-glass.svg" alt="Vaso de caña"><b>Caña</b><span>250 ml</span></div>
+<div class="block vessel"><img src="assets/vaso-bottle.svg" alt="Botella de tercio"><b>Tercio</b><span>33 cl</span></div>
+<div class="block vessel"><img src="assets/vaso-wine.svg" alt="Copa de vino"><b>Copa de vino</b><span>150 ml</span></div>
+<div class="block vessel"><img src="assets/vaso-can.svg" alt="Lata de refresco"><b>Lata</b><span>330 ml</span></div>
+</div>
+</section>
+
+<section class="wrap" aria-labelledby="h-planes">
+<h2 id="h-planes">Gratis de verdad. Plus si te apetece.</h2>
+<div class="plans">
+<div class="block plan free"><h3>Gratis</h3><ul><li>Tus pasos de hoy</li><li>Equivalencia con dibujo</li><li>Caña y tercio, vino tinto, cola y cerveza 0,0</li><li>Últimos 7 días</li><li>Tarjeta del día y de la semana para compartir</li></ul></div>
+<div class="block plan plus"><h3>Calobirra Plus</h3><ul><li>Widget para la pantalla de inicio y la de bloqueo</li><li>Vermut, tinto de verano, clara, sidra, cava, vino blanco y naranja</li><li>Café con leche, horchata y leche con cacao</li><li>Temas del bar: azulejo y pizarra</li><li>Estilos de cerveza, todo tu historial y más tarjetas</li></ul><p class="price">Pago único, sin suscripción. El precio lo muestra el App Store.</p></div>
+</div>
+</section>
+
+<section class="data" aria-labelledby="h-datos">
+<div class="wrap">
+<h2 id="h-datos">Tus pasos se quedan en tu iPhone</h2>
+<div class="facts">
+<div><h3>Sin cuenta</h3><p>No hay registro, ni servidor de Calobirra, ni publicidad, ni analítica de terceros.</p></div>
+<div><h3>Tú eliges la fuente</h3><p>Movimiento del iPhone o, si lo autorizas, solo la lectura de pasos de Salud. Nunca se suman.</p></div>
+<div><h3>Compartir es cosa tuya</h3><p>La tarjeta solo sale si pulsas Compartir, y no lleva tu peso. <a href="privacidad.html">Lee la política de privacidad</a>.</p></div>
+</div>
+</div>
+</section>
+
+<div class="caution"><div class="wrap"><p>Calobirra es para mayores de 18 años. Las calorías son aproximadas, no es consejo médico y no registra lo que bebes. Caminar no compensa el alcohol.</p></div></div>
+
+<section class="wrap" aria-labelledby="h-faq"><div class="prose">
+<h2 id="h-faq">Preguntas rápidas</h2>
+<details><summary>¿Cómo se calcula?</summary><p>Calorías estimadas = pasos × peso en kg × 0,0005. Luego se divide entre las calorías de la ración elegida (por ejemplo, un tercio de 330 ml a 43 kcal cada 100 ml). Puedes ajustar tu peso y las kcal por 100 ml en la app.</p></details>
+<details><summary>¿Funciona con el Apple Watch?</summary><p>Si eliges Salud como fuente y autorizas la lectura de pasos, Calobirra lee los pasos que tu Apple Watch haya guardado en Salud.</p></details>
+<details><summary>¿Hay versión para Android?</summary><p>De momento, solo iPhone.</p></details>
+<details><summary>¿Necesito ayuda?</summary><p>Escríbenos desde la <a href="soporte.html">página de soporte</a>.</p></details>
+</div></section>
+<script src="assets/conversor.js" defer></script>
+</main>
+<footer>
+<div class="wrap">
+<div>© {{YEAR}} {{OWNER_NAME}} · Contacto: <a href="mailto:{{SUPPORT_EMAIL}}">{{SUPPORT_EMAIL}}</a></div>
+<nav aria-label="Legal"><a href="aviso-legal.html">Aviso legal y contacto</a><a href="privacidad.html">Privacidad</a><a href="condiciones.html">Condiciones de uso</a><a href="soporte.html">Soporte</a><a href="en/index.html">English</a></nav>
+</div>
+</footer>
+</body>
+</html>

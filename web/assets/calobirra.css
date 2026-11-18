@@ -1,0 +1,104 @@
+/* Calobirra · web. Sin fuentes externas, sin cookies, sin analítica. */
+:root{
+  --ink:#12241C; --green:#0F7A45; --deep:#0B3D27; --amber:#FFB21A; --cream:#FFF4DC; --foam:#FFFDF2; --tomato:#FF5A36; --muted:#454F45;
+  --heavy:900; --font:"SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI Variable Display","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --shadow:0 6px 0 var(--ink);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);font:500 18px/1.55 var(--font)}
+a{color:var(--green);font-weight:800;text-underline-offset:3px}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--tomato);outline-offset:3px;border-radius:6px}
+img,svg{display:block;max-width:100%}
+.wrap{max-width:1120px;margin-inline:auto;padding-inline:20px}
+.prose{max-width:720px}
+
+/* Header */
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:18px;flex-wrap:wrap}
+.mark{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-weight:var(--heavy);font-size:22px;letter-spacing:-.3px}
+.mark img{width:40px;height:40px;border-radius:10px;border:3px solid var(--ink)}
+.nav{display:flex;gap:6px;flex-wrap:wrap}
+.nav a{color:var(--ink);text-decoration:none;font-weight:800;font-size:16px;padding:8px 12px;border-radius:999px;border:2.5px solid transparent}
+.nav a:hover,.nav a[aria-current=page]{border-color:var(--ink);background:var(--foam)}
+
+/* Hero: the converter is the memorable thing */
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center;padding-block:28px 56px}
+.hero h1{font-weight:var(--heavy);font-size:clamp(44px,7vw,84px);line-height:.95;letter-spacing:-2px;margin:0 0 20px}
+.hero p.lead{font-size:21px;font-weight:600;max-width:30ch;margin:0 0 26px}
+.soon{display:inline-flex;align-items:center;gap:10px;font-weight:var(--heavy);font-size:18px;background:var(--ink);color:#fff;padding:14px 20px;border-radius:16px;box-shadow:0 5px 0 var(--green)}
+.soon small{font-weight:600;opacity:.85;font-size:14px}
+
+.block{border:3px solid var(--ink);border-radius:26px;box-shadow:var(--shadow)}
+.converter{background:var(--green);color:#fff;padding:22px 22px 26px}
+.converter label{display:block;font-weight:800;font-size:16px}
+.steps{font-weight:var(--heavy);font-size:clamp(48px,6vw,68px);line-height:1;letter-spacing:-1.5px;color:var(--ink);background:var(--amber);border:3px solid var(--ink);border-radius:18px;padding:10px 16px;margin:8px 0 14px;display:flex;align-items:baseline;justify-content:space-between}
+.steps span{font-size:22px;letter-spacing:0}
+input[type=range]{width:100%;accent-color:var(--amber);height:32px}
+.stage{display:flex;align-items:flex-end;justify-content:center;gap:14px;min-height:250px;margin:10px 0 6px}
+.minis{display:flex;flex-direction:column;gap:8px;position:relative}
+.minis svg{width:64px}
+.mainv svg{width:170px;transition:transform .3s}
+.badge{position:absolute;top:-10px;right:-22px;background:var(--foam);color:var(--ink);border:2px solid var(--ink);border-radius:999px;padding:0 8px;font-weight:var(--heavy);font-size:20px}
+.total{font-weight:var(--heavy);font-size:clamp(40px,5vw,56px);line-height:1;text-align:center;letter-spacing:-1px;margin:6px 0 4px}
+.breakdown{text-align:center;font-weight:800;font-size:19px;margin:0}
+.kcal{text-align:center;font-size:15px;opacity:.92;margin:4px 0 0}
+.note{font-size:14px;font-weight:600;margin:14px 0 0;opacity:.95}
+
+/* Sections */
+section{padding-block:56px}
+h2{font-weight:var(--heavy);font-size:clamp(32px,4.4vw,48px);line-height:1.02;letter-spacing:-1px;margin:0 0 14px}
+h3{font-weight:var(--heavy);font-size:22px;margin:0 0 6px}
+.kicker{font-size:20px;font-weight:600;max-width:46ch;margin:0 0 28px}
+.vessels{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.vessel{background:var(--foam);padding:18px 14px 16px;text-align:center}
+.vessel img{height:150px;margin:0 auto 10px}
+.vessel b{display:block;font-weight:var(--heavy);font-size:19px}
+.vessel span{font-size:15px;color:var(--muted);font-weight:600}
+
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.plan{padding:24px}
+.plan.free{background:var(--amber)}
+.plan.plus{background:var(--tomato)}
+.plan ul{margin:10px 0 0;padding-left:20px;font-weight:600}
+.plan li{margin:4px 0}
+.plan .price{font-weight:var(--heavy);font-size:20px;margin-top:12px}
+
+.data{background:var(--ink);color:var(--cream)}
+.data h2{color:var(--amber)}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.facts p{margin:0;font-weight:500}
+.facts h3{color:#fff}
+.data a{color:var(--amber)}
+
+.caution{background:var(--amber);border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);padding:26px 0}
+.caution p{margin:0;font-weight:800;font-size:clamp(20px,2.6vw,26px);line-height:1.25;max-width:52ch}
+
+details{border:3px solid var(--ink);border-radius:18px;background:var(--foam);padding:14px 18px;margin:0 0 12px}
+summary{font-weight:var(--heavy);font-size:19px;cursor:pointer}
+details p{margin:10px 0 2px}
+
+/* Legal pages */
+.doc{padding-block:20px 64px}
+.doc h1{font-weight:var(--heavy);font-size:clamp(40px,6vw,62px);line-height:1;letter-spacing:-1.5px;margin:14px 0 10px}
+.doc h2{font-size:26px;letter-spacing:-.3px;margin:34px 0 8px}
+.doc .meta{color:var(--muted);font-weight:600;margin:0 0 26px}
+.doc table{border-collapse:collapse;width:100%;font-size:16px;margin:10px 0}
+.doc th,.doc td{border:2px solid var(--ink);padding:8px 10px;text-align:left;vertical-align:top}
+.doc th{background:var(--amber)}
+.callout{background:var(--amber);padding:16px 18px;font-weight:700;margin:22px 0}
+.contact{background:var(--foam);padding:18px 20px;margin:16px 0}
+.pending{background:#fff0a8;border:2px dashed var(--tomato);padding:0 6px;border-radius:6px;font-weight:800;color:var(--ink)}
+
+footer{border-top:3px solid var(--ink);padding:26px 0 40px;font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
+footer nav{display:flex;flex-wrap:wrap;gap:6px 18px}
+
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr;gap:28px}
+  .vessels{grid-template-columns:repeat(2,1fr)}
+  .plans,.facts{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+.mascot{display:block;width:160px;height:auto;margin:0 0 4px -14px}
+.doc .mascot{width:120px;margin:0 0 4px -10px}
